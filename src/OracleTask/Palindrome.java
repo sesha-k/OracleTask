@@ -57,7 +57,7 @@ public class Palindrome {
 	   return count;
     }
 
-	public int changeDigits(ArrayList<Integer> array)			// copies digits on left to respective right digits(Mirroring) uses arraylist
+	public int changeDigits(ArrayList<Integer> array)		      // copies digits on left to respective right digits(Mirroring) uses arraylist
 	{
 		int len=array.size();
 
