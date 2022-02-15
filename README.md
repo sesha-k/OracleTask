@@ -6,7 +6,7 @@ This is the solution for Oracle task to find palindrome after the given number.
 
 Palindrome is a String or a number which is the same as its reverse, Such as: liril, wow, 131 or 11. The task of finding the next palindrome is described below:
 
-How we humans proceed to do it?
+How does the program runs?
 There are 2 types of inputs possible:
 
 Case 1)
