@@ -1,4 +1,4 @@
-**VERY IMPORTANT** USED ECLIPSE TO CREATE PROJECT
+**VERY IMPORTANT** USE Ecclipse to run program at src/PalindromeMain.java
 
 
 # OracleTask
