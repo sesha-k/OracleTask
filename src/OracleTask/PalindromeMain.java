@@ -11,7 +11,8 @@ public class PalindromeMain {
 		try {
 				Scanner sc = new Scanner(System.in);
 				int number=sc.nextInt();
-				Palindrome pal=new Palindrome(number);
+				System.out.print("The next Palindrome is :"); 
+				Palindrome pal=new Palindrome(number+1);	//starting from next number
 				System.out.println(pal);
 				sc.close();
 		}
