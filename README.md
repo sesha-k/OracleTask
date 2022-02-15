@@ -22,14 +22,11 @@ Example 1:
 
 145
     **iterate starting from middle except middle if odd number of digits**
+    
     1<5
-
     so 4++
-
     1-5-5
-
     And copy 1 to right
-
     1-5-1
 
 151, Which is next palindrome of 145;
@@ -37,6 +34,7 @@ Example 1:
 Example 2
 123341
     **starting from middle**
+    
     CHECKS:
        3==3
        2<4
@@ -44,8 +42,7 @@ Example 2
        3++
        12'3'341 => 12'4'341
     and copy reverse of 124 at left in place of 341
-
-   **124421** Which is next Palindrome of 123341.
+    **124421** Which is next Palindrome of 123341.
 
 Case 2)
 **If any of the digits of LEFT(x) of middle(y) are greater than CORRESPONDING right(z)**
@@ -53,23 +50,22 @@ like 4641 or 4331 or 1100
 
 Then we simply copy the left digits to right WITHOUT INCREMENTING middle.
 
-X>Z
-    then
-    XYX is next palindrome.
-   EXAMPLE:
-      431
-      **starting from middle**
-      4>1
-      So copy 4 to 1 
-      4-3-4
+X>Z then XYX is next palindrome.
 
-And 434 is next Palindrome of 431.
+EXAMPLE:
+    431
+    **starting from middle**
+    4>1
+    so copy 4 to 1 
+    4-3-4
+    And 434 is next Palindrome of 431.
 
 421101
     **starting from middle**
-  1==1 => iter next 2 digits
-  2>0 
-So copy all digits on left to right
+    
+   1==1 => iter next 2 digits
+   2>0 
+   So copy all digits on left to right
 
 i.e
 
