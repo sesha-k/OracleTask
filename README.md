@@ -10,66 +10,69 @@ How we humans proceed to do it?
 There are 2 types of inputs possible:
 
 Case 1)
-**Any of right digits are bigger than aany of their corresponding left digits.**
-xyz (assume x,y,z are numbers)
+**Any of right digits are bigger than any of their corresponding left digits.**
+like 1464 or 1338 or 123 etc
+
+let XYZ be format of input number (assume x,y,z are numeric digits)
+
 
 Here if any of the digits(At first encounter) right(here z) side to middle digit(here y) is greater than any of the **CORRESPONDING** digits left(here x) of middle. Then we simply increase the y by 1 and copy all digits to left to right.
 
 Example 1:
 
 145
+    **iterate starting from middle except middle if odd number of digits**
+    1<5
 
-1<5
+    so 4++
 
-so 4++
+    1-5-5
 
-1-5-5
+    And copy 1 to right
 
-And copy 1 to right
-
-1-5-1
+    1-5-1
 
 151, Which is next palindrome of 145;
 
 Example 2
 123341
+    **starting from middle**
+    CHECKS:
+        3==3
+        2<4
+    So increase 3(left '3')
+        3++
+        12'3'341 => 12'4'341
+    and copy reverse of 124 at left in place of 341
 
-CHECKS:
-    3==3
-    2<4
-So increase 3(left '3')
-3++
-124341
-and copy
-
-124421 Which is next Palindrome of 123341.
+   **124421** Which is next Palindrome of 123341.
 
 Case 2)
 **If any of the digits of LEFT(x) of middle(y) are greater than CORRESPONDING right(z)**
-if x>z
+like 4641 or 4331 or 1100 
 
 Then we simply copy the left digits to right WITHOUT INCREMENTING middle.
 
 X>Z
 
-then
+    then
 
-XYX is next palindrome.
+    XYX is next palindrome.
 
 EXAMPLE:
 431
+    **starting from middle**
+    4>1
 
-4>1
+    So copy 4 to 1 
 
-So copy 4 to 1 
-
-4-3-4
+    4-3-4
 
 And 434 is next Palindrome of 431.
 
 421101
-
-  1==1
+    **starting from middle**
+  1==1 => iter next 2 digits
   2>0
   
 So copy all digits on left to right
