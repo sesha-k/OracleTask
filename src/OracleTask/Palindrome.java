@@ -15,7 +15,7 @@ public class Palindrome {
 		this.number=number;
 	}
 
-    public ArrayList<Integer> numberIntoArray(int number)
+    public ArrayList<Integer> numberIntoArray(int number)			// converts a number into arraylist of integers
     {
 	   int len=numberOfDigits(number);
 	   ArrayList<Integer> array=new ArrayList<Integer>();
@@ -34,7 +34,7 @@ public class Palindrome {
 	   return array;
     }
 
-	public int arrayIntoNumber(ArrayList<Integer> array)
+	public int arrayIntoNumber(ArrayList<Integer> array)			//converts arraylist of integers into number
     {
 	   int number=0;
 	   while(array.size()!=0)
@@ -45,7 +45,7 @@ public class Palindrome {
 	   return number;
     }
 
-	public int numberOfDigits(int number)
+	public int numberOfDigits(int number)					// Calculates number of digits in input number
     {
 	   int count=0;
 	   while(number>0)
@@ -57,7 +57,7 @@ public class Palindrome {
 	   return count;
     }
 
-	public int changeDigits(ArrayList<Integer> array)
+	public int changeDigits(ArrayList<Integer> array)			// copies digits on left to respective right digits(Mirroring) uses arraylist
 	{
 		int len=array.size();
 
@@ -71,7 +71,7 @@ public class Palindrome {
 		return arrayIntoNumber(array);
 	}
 
-	public int nextPalindrome (int number) {
+	public int nextPalindrome (int number) {				//main logic
 
 		ArrayList<Integer> array=numberIntoArray(number);
 		int len=numberOfDigits(number);
@@ -89,7 +89,7 @@ public class Palindrome {
 			}
 			else 
 			{
-				if(array.get(i)<array.get(len-i-1))
+				if(array.get(i)<array.get(len-i-1))		//increment of mid
 					array.set(mid,array.get(mid)+1);
 			
 				number= changeDigits(array);
