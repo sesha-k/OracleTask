@@ -54,16 +54,14 @@ like 4641 or 4331 or 1100
 Then we simply copy the left digits to right WITHOUT INCREMENTING middle.
 
 X>Z
-
     then
     XYX is next palindrome.
-
-EXAMPLE:
-431
-    **starting from middle**
-    4>1
-    So copy 4 to 1 
-    4-3-4
+   EXAMPLE:
+      431
+      **starting from middle**
+      4>1
+      So copy 4 to 1 
+      4-3-4
 
 And 434 is next Palindrome of 431.
 
