@@ -104,7 +104,7 @@ public class Palindrome {
 	}
 	public String toString()
 	{
-		return "The next Palindrome of "+getNumber()+" is "+String.valueOf(nextPalindrome(number));
+		return String.valueOf(nextPalindrome(number));
 	}
 	
 }
